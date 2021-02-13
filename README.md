@@ -1,2 +1,2 @@
-# course-project
+# course-projects
 All general course projects before

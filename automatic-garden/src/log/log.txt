@@ -1,0 +1,68 @@
+**************************************************************************
+Growing Plan Generated!
+	Heater Temperature Start at:	42°„F
+	Heater Temperature End at:		62°„F
+	Sprinkler Time Start at:	10
+	Sprinkler Time End at:		15
+	Fertilizer Time Start at:	08
+	Fertilizer Time End at:		15
+	Light Time Start at:	20
+	Light Time End at:		22
+**************************************************************************
+Date: 2016-3-1  0:0:0
+Temperature:  55.0 °„F
+Weather:  Warm
+Emergency:
+	Normal and trivial! Don't worry!
+------------------------------------------------------------
+North Area:
+	Heater:		Off	GrowingPlan hold the access!
+	Sprinkler:	Off	GrowingPlan hold the access!
+	Fertilizer: Off	GrowingPlan hold the access!
+	Light:		Off	GrowingPlan hold the access!
+
+	AppleTree:
+		Height:	100 cm
+		Rest Life Time:	15 Days
+	Eucalyptus:
+		Height:	01 m
+		Rest Life Time:	30 Days
+------------------------------------------------------------
+West Area:
+	Heater:		Off	GrowingPlan hold the access!
+	Sprinkler:	Off	GrowingPlan hold the access!
+	Fertilizer: Off	GrowingPlan hold the access!
+	Light:		Off	GrowingPlan hold the access!
+
+	Orchid:
+		Height:	10 cm
+		Rest Life Time:	06 Days
+	Rose:
+		Height:	05 m
+		Rest Life Time:	06 Days
+------------------------------------------------------------
+East Area:
+	Heater:		Off	GrowingPlan hold the access!
+	Sprinkler:	Off	GrowingPlan hold the access!
+	Fertilizer: Off	GrowingPlan hold the access!
+	Light:		Off	GrowingPlan hold the access!
+
+	GatlingPea:
+		Height:	30 cm
+		Rest Life Time:	10 Days
+	Watermelon:
+		Weight:	20 g
+		Rest Life Time:	10 Days
+------------------------------------------------------------
+South Area:
+	Heater:		Off	GrowingPlan hold the access!
+	Sprinkler:	Off	GrowingPlan hold the access!
+	Fertilizer: Off	GrowingPlan hold the access!
+	Light:		Off	GrowingPlan hold the access!
+
+	Corn:
+		Height:	40 cm
+		Rest Life Time:	06 Days
+	Sunflower:
+		Height:	20 cm
+		Rest Life Time:	06 Days
