@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_propose_event"
+        android:background="@color/title_background_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="New Event"
+            android:id="@+id/toolbar_calendar_title"
+            android:textColor="@color/title_text_color"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Title:"
+            android:id="@+id/textView_propose_event_title"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:gravity="center_vertical" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_text_propose_event_title"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_view_propose_event_location"
+            android:src="@drawable/temp_map_icon"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_propose_event_location"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:hint="Location:"
+            android:text="300H, Lucas Hall, 455 El Camino Real"
+            android:layout_weight="4"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Note: "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_propose_event_note"
+            android:layout_weight="4"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="Please bring your own laptop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Duration: "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_propose_event_duration"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical">
+        </Spinner>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Remind ahead:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_propose_event_reminder"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earliest date "
+            android:id="@+id/textView_propose_starting_date"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_gravity="center_vertical" />
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker_propose_event"
+            android:datePickerMode="calendar"
+            android:spinnersShown="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="right"
+        android:layout_weight="1"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/edit_text_propose_event_add_member_email"
+            android:hint="Enter member email"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add member"
+            android:id="@+id/button_propose_event_add_member" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp">
+
+        <GridView
+            android:id="@+id/gridview_show_members"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:numColumns="4"
+            android:verticalSpacing="10dp"
+            android:columnWidth="20dp"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Invitation"
+            android:id="@+id/button_propose_event_send_invitation"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel "
+            android:id="@+id/button_propose_event_cancel" />
+    </LinearLayout>
+
+</LinearLayout>
